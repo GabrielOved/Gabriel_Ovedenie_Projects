@@ -1,2 +1,2 @@
-# Gabriel_Ovedenie_Projects
+# Gabriel Ovedenie Projects
 My project repository for various programming languages
