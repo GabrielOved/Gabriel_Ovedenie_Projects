@@ -52,4 +52,4 @@ def file_conversion(file):
         print("❌ Input either a JSON or CSV file for format conversion") # print used when no file format or the incorrect file format is used
 
 
-file_conversion(file=f"2026-02-18_top_250_imdb_movies") # final call to generate the converted file
+file_conversion(file=f"2026-02-18_top_250_imdb_movies.csv") # final call to generate the converted file
