@@ -1,5 +1,6 @@
 import datetime
 from os.path import exists
+import traceback
 import pandas as pd
 
 # Current date used for output file name
@@ -27,29 +28,34 @@ def csv_to_json(csv_file, json_file_path):
 
 # Function that converts a JSON or CSV file to the opposite format based on the user selection
 def file_conversion(file):
-    number = '1' # initialization of a variable used to check for the existence of the output file
-    if file.endswith(".json"): # Check for the CSV input file format
-        result = f"output_{current_date}.csv" # Name of the CSV output file
-        for i in range(20): # for loop name check for CSV output file
-            while exists(result): # Check for the existence of the CSV output file
-                result = 'output' + '_' + current_date + '_' + number + '.csv' # name of the CSV output file if the while statement is still True
-                number = chr(ord(number)+1) # incrementation for the name check
-            else:
-                json_to_csv(file, result) # call to the conversion function only if the CSV output file does not exist
-                print(f"The {result} file was generated successfully")
-                break # break out of the for loop
-    elif file.endswith(".csv"): # Check for the input file format
-        result = f"output_{current_date}.json" # Name of the JSON output file
-        for i in range(10): # for loop name check for JSON output file
-            while exists(result): # Check for the existence of the JSON output file
-                result = 'output' + '_' + current_date + '_' + number + '.json' # name of the JSON output file if the while statement is still True
-                number = chr(ord(number) + 1) # incrementation for the name check
-            else:
-                csv_to_json(file, result) # call to the conversion function only if the JSON output file does not exist
-                print(f"✅ The {result} file was generated successfully")
-                break # break out of the for loop
-    else:
-        print("❌ Input either a JSON or CSV file for format conversion") # print used when no file format or the incorrect file format is used
+    try:
+        number = '1' # initialization of a variable used to check for the existence of the output file
+        if file.endswith(".json"): # Check for the CSV input file format
+            result = f"output_{current_date}.csv" # Name of the CSV output file
+            for i in range(20): # for loop name check for CSV output file
+                while exists(result): # Check for the existence of the CSV output file
+                    result = 'output' + '_' + current_date + '_' + number + '.csv' # name of the CSV output file if the while statement is still True
+                    number = chr(ord(number)+1) # incrementation for the name check
+                else:
+                    json_to_csv(file, result) # call to the conversion function only if the CSV output file does not exist
+                    print(f"The {result} file was generated successfully")
+                    break # break out of the for loop
+        elif file.endswith(".csv"): # Check for the input file format
+            result = f"output_{current_date}.json" # Name of the JSON output file
+            for i in range(10): # for loop name check for JSON output file
+                while exists(result): # Check for the existence of the JSON output file
+                    result = 'output' + '_' + current_date + '_' + number + '.json' # name of the JSON output file if the while statement is still True
+                    number = chr(ord(number) + 1) # incrementation for the name check
+                else:
+                    csv_to_json(file, result) # call to the conversion function only if the JSON output file does not exist
+                    print(f"✅ The {result} file was generated successfully")
+                    break # break out of the for loop
+        else:
+            print("❌ Input either a JSON or CSV file for format conversion") # print used when no file format or the incorrect file format is used
 
+    except Exception as e:
+        tb = traceback.extract_tb((e.__traceback__))
+        first_frame = tb[-1]
+        print(f"❌ The following Exception occurred, line {first_frame.lineno} in {first_frame.name}\n{e}")
 
 file_conversion(file=f"2026-02-18_top_250_imdb_movies.csv") # final call to generate the converted file
