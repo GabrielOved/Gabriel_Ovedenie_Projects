@@ -53,9 +53,9 @@ def file_conversion(file):
         else:
             print("❌ Input either a JSON or CSV file for format conversion") # print used when no file format or the incorrect file format is used
 
-    except Exception as e:
-        tb = traceback.extract_tb((e.__traceback__))
+    except Exception as e: # Exception handling
+        tb = traceback.extract_tb((e.__traceback__)) # traceback object to retrieve the line triggering the exception
         first_frame = tb[-1]
-        print(f"❌ The following Exception occurred, line {first_frame.lineno} in {first_frame.name}\n{e}")
+        print(f"❌ The following Exception occurred, line {first_frame.lineno} in {first_frame.name}\n{e}") # print of the exception and the line that triggered it
 
 file_conversion(file=f"2026-02-18_top_250_imdb_movies.csv") # final call to generate the converted file
