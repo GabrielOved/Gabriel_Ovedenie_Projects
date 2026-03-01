@@ -2,6 +2,8 @@
 
 ## Python
 
+Example files were added for each project where necessary for testing purposes and to showcase a practicle scenario
+
 _**CompareCSV**_ -- Notable used packages (Pandas):
 
 [CSVCompare](https://github.com/GabrielOved/Gabriel_Ovedenie_Projects/tree/main/CsvCompare)
