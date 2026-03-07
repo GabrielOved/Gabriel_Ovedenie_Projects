@@ -58,7 +58,7 @@ def csv_comparison(source_file_left=f'source_{date}.csv', target_file_right=f'ta
             print(f"❌ Comparison file generated successfully with {len(diff.index)} mismatches") # print if there are many differences between the two files
 
     except Exception as e: # Exception handling
-        tb = traceback.extract_tb((e.__traceback__)) # traceback object to retrieve the line triggering the exception
+        tb = traceback.extract_tb(e.__traceback__) # traceback object to retrieve the line triggering the exception
         first_frame = tb[-1]
         print(f"❌ The following Exception occurred, line {first_frame.lineno} in {first_frame.name}\n{e}") # print of the exception and the line that triggered it
 

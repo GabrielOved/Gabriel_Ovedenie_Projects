@@ -1,0 +1,36 @@
+Prerequisites:
+- Install Python 3.10 or a newer version, check if the installation was successful in Windows cmd (python --version) | in Linux terminal (python3)
+- Run the command: Windows (pip install requests) | Linux (pip3 install requests)
+- Run the command: Windows (pip install BeautifulSoup)| Linux (pip3 install BeautifulSoup)
+- Run the command: Windows (pip install bs4) | Linux (pip3 install bs4)
+- Run the command: Windows (pip install dotenv) | Linux (pip3 install dotenv)
+
+Windows:
+While having Admin Privileges:
+   -Open Task Scheduler. This can be done by typing Task Scheduler into the search bar.
+   -In Task Scheduler, click "Create Basic Task"
+   -After naming the task, choose your preferred trigger, then "Start a Program"
+   -Click "Browse", then find cmd.exe, located usually in C:\Windows\System32\cmd.exe
+   -Add /c ThermoenergeticIssueScraping.py YOUR_STREET_NAME (replacing YOUR_STREET_NAME with a valid name) to the "Add arguments (optional)" field.
+   -Add C:\Users\YOUR_USER_NAME\PycharmProjects\PythonProjects\WebScarpingThermoenergeticDefect (replacing YOUR_USER_NAME with a valid name and if the path is different then it needs to be changed) to the "Start in (optional)" field.
+   -Press Next then Finish
+Without Admin Privileges (the only available option is to trigger on Startup without privileges)
+   -Right-click anywhere on your desktop, go to New > Text Document.
+   -Open the new text document, and type in the following commands(if the path in CD is different then it needs to be changed, @echo on can be changed to @echo off if you don't want cmd to display the command):
+    --------------------------------------------------------------------------------------------
+    @echo on
+    CD "C:\Users\YOUR_USER_NAME\PycharmProjects\PythonProjects\WebScarpingThermoenergeticDefect"
+    cmd /c "ThermoenergeticIssueScraping.py YOUR_STREET_NAME"
+    --------------------------------------------------------------------------------------------
+   -Click on File > Save As, change the Save as type to All Files, and save it with any name but with an extension of .bat (for example, autoStart.bat).
+   -Open Run. This can do this with Win + R or by typing Run into the search bar.
+   -Type shell:startup and hit Enter to open the Startup folder.
+   -Simply drag-and-drop (or copy and paste) your batch file into this folder.
+
+Linux:
+   -Open the Linux terminal. This can be done with CTRL+ALT+T or by typing Terminal in the applications menu
+   -Type crontab -e
+   -If you want a set your for the run (ex. Runs at 10 AM Daily) then type: 10** /YOUR_USER_NAME/bin/python3 home/YOUR_USER_NAME/projects/ThermoenergeticIssueScraping.py >> home/YOUR_USER_NAME/projects/ThermoenergeticIssueScraping.log 2>&1
+   -If you want to run at Startup then type: @reboot /YOUR_USER_NAME/bin/python3 home/YOUR_USER_NAME/projects/ThermoenergeticIssueScraping.py --mode startup >> home/YOUR_USER_NAME/projects/ThermoenergeticIssueScraping.log 2>&1
+   -Both options can be selected
+   -Save and exit (nano: Press CTRL_0 -> Enter -> CTRL+X to exit, vim: Press Esc -> type :wq -> Enter)
