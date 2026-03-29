@@ -15,3 +15,7 @@ _**FileFomatConversion(from JSON to CSV or from CSV to JSON)**_ -- Notable used 
 _**WebScraping**_ -- Notable used packages (requests, dotenv, smtplib, BeautifulSoup,  email.mime):
 
 [WebScrapingThermoenergeticIssues](https://github.com/GabrielOved/Gabriel_Ovedenie_Projects/tree/main/WebScarpingThermoenergeticDefect)
+
+_**Selenium**_ -- Notable used packages (selenium, requests, glob):
+
+[SeleniumAPKDownload](https://github.com/GabrielOved/Gabriel_Ovedenie_Projects/tree/Adjacent/SeleniumFDroidAPKdownload)
