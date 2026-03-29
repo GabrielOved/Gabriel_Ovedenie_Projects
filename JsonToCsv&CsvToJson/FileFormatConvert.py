@@ -22,8 +22,9 @@ def csv_to_json(csv_file, json_file_path):
     # Read and Convert the CSV data to DataFrame
     df = pd.read_csv(csv_file)
 
-    # Save DataFrame to JSON file
-    df.to_json(json_file_path, index=False)
+    # Save DataFrame to standard JSON format using the orient= "records" and lines=False (can be opened easily in Python or JavaScript)
+    # Setting lines=True changes the format to JSONL (one object per line)
+    df.to_json(json_file_path, orient="records", lines=False)
 
 
 # Function that converts a JSON or CSV file to the opposite format based on the user selection
