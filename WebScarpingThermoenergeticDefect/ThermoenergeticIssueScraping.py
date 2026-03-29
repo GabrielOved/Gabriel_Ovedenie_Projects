@@ -84,10 +84,11 @@ class ThermoenergeticIssue:
 
             print("✅ Email Sent")  # print to keep the user informed throughout the process
 
-            server.quit()  # closing the connection to the server
-
         except Exception as e:  # Exception handling
             print(f"❌ The following Exception occurred:\n{e}")  # print of the exception and the line that triggered it
+        finally:  # finally block that closes the server even if an exception occurs
+            if server:
+                server.quit()  # closing the connection to the server
 
             return self
 
