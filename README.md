@@ -1,7 +1,8 @@
 # Gabriel Ovedenie Projects
 
-## Python
-
+<details open>
+<summary><b>Python</b></summary>
+  
 Example files were added for each project where necessary for testing purposes and to showcase a practicle scenario
 
 _**CompareCSV**_ -- Notable used packages (Pandas):
@@ -19,3 +20,24 @@ _**WebScraping**_ -- Notable used packages (requests, dotenv, smtplib, Beautiful
 _**Selenium**_ -- Notable used packages (selenium, requests, glob):
 
 [SeleniumAPKDownload](https://github.com/GabrielOved/Gabriel_Ovedenie_Projects/tree/Adjacent/SeleniumFDroidAPKdownload)
+</details>
+
+<details open>
+<summary><b>Java</b></summary>
+
+Example files were added for each project where necessary for testing purposes and to showcase a practicle scenario
+
+_**SeleniumTestNG**_ -- Notable used frameworks (Selenium, TestNG, Allure):
+
+[SeleniumAllureSkyScannerTesting](https://github.com/GabrielOved/Gabriel_Ovedenie_Projects/tree/Adjacent/SeleniumSkyScannerAllureTesting)
+
+</details>
+
+
+
+
+
+
+
+
+
