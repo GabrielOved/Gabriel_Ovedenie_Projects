@@ -1,0 +1,12 @@
+Prerequisites:
+- Install a Java jdk version
+- Sync the Maven project
+- Update the dependency versions in pom.xml (if needed)
+- Download the Allure version that corresponds with the dependency from https://github.com/allure-framework/allure2/releases
+- Download the Maven version that corresponds with the dependency from https://maven.apache.org/download.cgi
+- On Windows, right click -> This PC -> Proprieties -> Advanced system Settings (on the right near device specifications) -> Environment Variables -> Select Path -> press Edit... -> New -> add path to allure then Maven (ex: C:\allure-2.39.0\bin | C:\apache-maven-3.9.14\bin
+- In Environment Variables, JAVA_HOME also needs to be created by pressing New... -> Variable Name: JAVA_HOME | Variable Value: PATH TO JDK (ex: C:\Users\user\.jdk\temurin-21.0.10 -> press OK
+- After creating the JAVA_HOME variable, Path needs to be edited again and a new variable named %JAVA_HOME%\bin needs to be added
+
+OpenAllureReport:
+- To Open the allure JSON results, the following command needs to be run: allure serve C:\Users\YOUR_USER_NAME\PATH_TO_PROJECT\SeleniumSkyScannerAllureTesting\allure_results
