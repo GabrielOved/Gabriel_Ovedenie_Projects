@@ -29,7 +29,11 @@ Example files were added for each project where necessary for testing purposes a
 
 _**SeleniumTestNG**_ -- Notable used frameworks (Selenium, TestNG, Allure):
 
-[SeleniumAllureSkyScannerTesting](https://github.com/GabrielOved/Gabriel_Ovedenie_Projects/tree/Adjacent/SeleniumSkyScannerAllureTesting)
+[SeleniumAllureSkyScannerTesting](https://github.com/GabrielOved/Gabriel_Ovedenie_Projects/tree/Adjacent/SeleniumSkyScannerAllureTesting/src)
+
+_**SeleniumTestNG**_ -- Notable used frameworks (Cucumber, JUnit):
+
+[CucumberPublicHolidaysCalendar](https://github.com/GabrielOved/Gabriel_Ovedenie_Projects/tree/Adjacent/CucumberPublicHolidaysCalendar/src)
 
 </details>
 
