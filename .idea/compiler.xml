@@ -11,6 +11,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="FileAnalyzer.main" target="21" />
+      <module name="FileAnalyzer.test" target="21" />
+      <module name="Gradle" target="21" />
       <module name="Project" target="1.8" />
     </bytecodeTargetLevel>
   </component>
