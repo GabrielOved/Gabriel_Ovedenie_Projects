@@ -10,3 +10,7 @@ dataSources/
 dataSources.local.xml
 # Maven build output
 target/
+# Gradle build output
+build/
+.gradle/
+gradle/

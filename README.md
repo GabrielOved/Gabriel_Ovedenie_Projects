@@ -31,9 +31,13 @@ _**SeleniumTestNG**_ -- Notable used frameworks (Selenium, TestNG, Allure):
 
 [SeleniumAllureSkyScannerTesting](https://github.com/GabrielOved/Gabriel_Ovedenie_Projects/tree/Adjacent/SeleniumSkyScannerAllureTesting/src)
 
-_**SeleniumTestNG**_ -- Notable used frameworks (Cucumber, JUnit):
+_**Cucumber**_ -- Notable used frameworks (Cucumber, JUnit):
 
 [CucumberPublicHolidaysCalendar](https://github.com/GabrielOved/Gabriel_Ovedenie_Projects/tree/Adjacent/CucumberPublicHolidaysCalendar/src)
+
+_**Analyzer**_ -- Notable used libraries (Apache PDFBox, Apache POI):
+
+[FileAnalyzer](https://github.com/GabrielOved/Gabriel_Ovedenie_Projects/tree/Adjacent/FileAnalyzer/src/main/java/FileAnalyzer)
 
 </details>
 
