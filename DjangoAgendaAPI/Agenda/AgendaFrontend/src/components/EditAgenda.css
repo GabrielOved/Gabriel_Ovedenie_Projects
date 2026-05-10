@@ -1,0 +1,204 @@
+/* PAGE TITLE */
+.page-title {
+  font-size: 40px;          /* large heading size */
+  font-weight: 700;         /* bold text */
+  margin-bottom: 20px;      /* spacing below title */
+  text-align: left;         /* align to left */
+}
+
+/* MAIN CONTAINER */
+.container {
+  width: 100%;              /* full width */
+  max-width: 600px;         /* limit width for readability */
+  margin: 40px auto;        /* center horizontally with top spacing */
+  font-family: Arial, sans-serif; /* clean default font */
+  padding: 0 10px;          /* side padding for small screens */
+}
+
+/* SHARED SECTION LAYOUT */
+.section {
+  display: flex;            /* flex layout for inputs/buttons */
+  gap: 10px;                /* spacing between elements */
+  margin-bottom: 25px;      /* spacing between sections */
+  flex-wrap: wrap;          /* allow wrapping on small screens */
+}
+
+/* TOP INPUT SECTION */
+.top-section input,
+.top-section select {
+  flex: 1;                  /* take available space equally */
+  min-width: 150px;         /* prevent shrinking too much */
+  padding: 8px;             /* inner spacing */
+}
+
+/* MAKE TITLE INPUT LARGER THAN OTHERS */
+.top-section input[type="text"] {
+  flex: 2;                  /* wider than other inputs */
+  min-width: 400px;         /* enforce readable width */
+}
+
+/* ADD BUTTON */
+.add-btn {
+  padding: 8px 12px;        /* button size */
+  background: #4caf50;      /* green background */
+  color: white;             /* text color */
+  border: none;             /* remove default border */
+  cursor: pointer;          /* pointer cursor */
+  border-radius: 4px;       /* rounded corners */
+  transition: 0.2s;         /* smooth hover effect */
+
+  flex: 0 0 auto;           /* do not grow or shrink */
+  min-width: 90px;          /* minimum button width */
+  height: 40px;             /* align with inputs */
+  margin-left: auto;        /* push button to right */
+  align-self: flex-end;     /* align to bottom of row */
+}
+
+/* ADD BUTTON HOVER STATE */
+.add-btn:hover {
+  background: #388e3c;      /* darker green on hover */
+}
+
+/* SEARCH SECTION */
+.search-section {
+  display: flex;            /* layout search + filter */
+  position: relative;       /* anchor dropdown positioning */
+  margin-bottom: 50px;      /* spacing below section */
+}
+
+/* SEARCH INPUT */
+.search-section input {
+  flex: 1;                  /* take full width */
+  padding: 8px;             /* inner spacing */
+  min-width: 100px;         /* prevent collapse */
+  max-width: 100%;          /* prevent overflow */
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  padding: 8px 12px;        /* button size */
+  background: #e53935;      /* red color */
+  color: white;             /* text color */
+  border: none;             /* no border */
+  cursor: pointer;          /* pointer cursor */
+  border-radius: 4px;       /* rounded corners */
+  transition: 0.2s;         /* smooth hover effect */
+}
+
+/* DELETE BUTTON HOVER */
+.delete-btn:hover {
+  background: #c62828;      /* darker red */
+}
+
+/* DELETE MODE ACTIVE STATE */
+.delete-btn.active {
+  outline: 2px solid #b71c1c; /* highlight active state */
+}
+
+/* LIST WRAPPER */
+.list {
+  margin-top: 20px;         /* spacing above list */
+  display: flex;            /* vertical layout */
+  flex-direction: column;   /* stack items */
+  gap: 10px;                /* spacing between cards */
+}
+
+/* AGENDA CARD */
+.card {
+  display: flex;            /* layout checkbox + content */
+  gap: 10px;                /* spacing between elements */
+  align-items: flex-start;  /* align top */
+  padding: 12px;            /* inner spacing */
+  border: 1px solid #ddd;   /* light border */
+  border-radius: 8px;       /* rounded corners */
+
+  flex-wrap: wrap;          /* allow content wrapping */
+}
+
+/* CARD CONTENT AREA */
+.card-content {
+  display: flex;            /* vertical stacking */
+  flex-direction: column;   /* column layout */
+  flex: 1;                  /* take remaining space */
+  min-width: 150px;         /* prevent shrinking */
+  word-break: break-word;   /* prevent text overflow */
+}
+
+/* AGENDA TITLE */
+.Agenda-title {
+  font-weight: bold;        /* highlight title */
+}
+
+/* FILTER BUTTON */
+.filter button {
+  padding: 8px 12px;        /* button spacing */
+  flex-shrink: 0;           /* prevent shrinking */
+  cursor: pointer;          /* pointer cursor */
+}
+
+/* FILTER TITLE LABEL */
+.title-of-filter {
+  font-size: 12px;          /* small label */
+  font-weight: 700;         /* bold text */
+  border-bottom: 1px solid #ddd; /* separator line */
+  padding-bottom: 4px;      /* spacing under text */
+  margin-bottom: 8px;       /* spacing below */
+}
+
+/* FILTER DROPDOWN PANEL */
+.filter-dropdown {
+  position: absolute;       /* floating panel */
+  top: calc(100% + 6px);    /* below button */
+  left: 0;                  /* align left */
+
+  display: flex;            /* columns layout */
+  gap: 20px;                /* spacing between columns */
+
+  padding: 12px;            /* inner spacing */
+
+  background: transparent;  /* semi-transparent base */
+  backdrop-filter: blur(12px); /* glass effect */
+  border: 1px solid grey;   /* border */
+  border-radius: 8px;       /* rounded corners */
+
+  z-index: 10;              /* appear above content */
+
+  min-width: 260px;         /* minimum size */
+}
+
+
+/* FILTER COLUMN */
+.filter-column {
+  min-width: 120px;         /* prevent shrinking */
+}
+
+/* FILTER OPTION ITEM */
+.filter-option {
+  margin-bottom: 4px;       /* spacing between items */
+  padding: 6px;             /* clickable area */
+  cursor: pointer;          /* pointer cursor */
+  border-radius: 4px;       /* rounded hover effect */
+}
+
+/* DISABLED FILTER OPTION */
+.filter-option.disabled {
+  border: 1px solid red;    /* indicate disabled */
+  cursor: not-allowed;      /* show non-clickable */
+}
+
+/* ACTIVE FILTER OPTION */
+.filter-option.active {
+  background: #4caf50;      /* highlight selected */
+  color: white;             /* contrast text */
+}
+
+/* HOVER EFFECT (only enabled items) */
+.filter-option:not(.disabled):hover {
+  border: 1px solid green;  /* hover highlight */
+}
+
+/* FILTER WRAPPER */
+.filter {
+  position: relative;       /* anchor dropdown */
+  display: inline-flex;     /* shrink to content */
+}

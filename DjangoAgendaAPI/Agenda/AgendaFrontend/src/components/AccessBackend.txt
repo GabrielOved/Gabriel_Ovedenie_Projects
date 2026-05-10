@@ -1,0 +1,13 @@
+For the Frontend to access the Backend, the following is needed:
+|Backend|
+- Open a terminal in the IDE or Windows/Linux
+- Run the command: cd C:\Users\user\ProgrammingProjects\Projects\DjangoAgendaAPI\Agenda
+- After, run the command: python manage.py runserver (if there is an error run: python manage.py makemigrations then: python manage.py migrate)
+- The message from the command should contain the development local server port for the Backend API (ex: http://127.0.0.1:8000/)
+
+|Frontend|
+- Open a new terminal instance (do not use the previous instance or close the previous instance)
+- Run the command: cd C:\Users\user\ProgrammingProjects\Projects\DjangoAgendaAPI\Agenda\AgendaFrontend
+- After, run the command: npm run dev
+- The message from the command should contain the local server port for the Frontend API (ex: http://localhost:5173/)
+- Open a browser instance and run the local host link, the Frontend will open connected to the Backend
