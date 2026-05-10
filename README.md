@@ -1,6 +1,6 @@
 # Gabriel Ovedenie Projects
 
-<details open>
+<details close>
 <summary><b>Python</b></summary>
   
 Example files were added for each project where necessary for testing purposes and to showcase a practicle scenario
@@ -20,9 +20,11 @@ _**WebScraping**_ -- Notable used packages (requests, dotenv, smtplib, Beautiful
 _**Selenium**_ -- Notable used packages (selenium, requests, glob):
 
 [SeleniumAPKDownload](https://github.com/GabrielOved/Gabriel_Ovedenie_Projects/tree/Adjacent/SeleniumFDroidAPKdownload)
+
+---
 </details>
 
-<details open>
+<details close>
 <summary><b>Java</b></summary>
 
 Example files were added for each project where necessary for testing purposes and to showcase a practicle scenario
@@ -39,10 +41,26 @@ _**Analyzer**_ -- Notable used libraries (Apache PDFBox, Apache POI):
 
 [FileAnalyzer](https://github.com/GabrielOved/Gabriel_Ovedenie_Projects/tree/Adjacent/FileAnalyzer/src/main/java/FileAnalyzer)
 
+---
+
 </details>
 
+<details close>
+<summary><b>JavaScript</b></summary>
 
+Example files were added for each project where necessary for testing purposes and to showcase a practicle scenario
 
+_**Agenda**_ -- Notable used frameworks (Django, React):
+
+[AgendaFrontend](https://github.com/GabrielOved/Gabriel_Ovedenie_Projects/tree/Adjacent/DjangoAgendaAPI/Agenda/AgendaFrontend/src/components)
+
+[AgendaBackendSettings](https://github.com/GabrielOved/Gabriel_Ovedenie_Projects/tree/Adjacent/DjangoAgendaAPI/Agenda/AgendaBackend)
+
+[AgendaBackendModels](https://github.com/GabrielOved/Gabriel_Ovedenie_Projects/tree/Adjacent/DjangoAgendaAPI/Agenda/EntriesAgenda)
+
+---
+
+</details>
 
 
 
